@@ -79,11 +79,11 @@ change - change upload mode ( default mode is Document )
  python3 main.py
  ```
 
- #### Join Telegram Channel 
+ # Join Telegram Channel 
  - [WebXBots](https://t.me/WebXBots). Bot Updates Channel
  - Support Group [WebX-Support](https://t.me/Web_X_Support). For Bug report.
 
- #### Credits
+ # Credits
 
  - Thanks [Bipinkrish](https://github.com/bipinkrish) for this awesome source.
  - Thanks [pyrogram](https://docs.pyrogram.org/) for library.
