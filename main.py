@@ -38,8 +38,8 @@ def echo(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
         app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__', reply_to_message_id=message.id,reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("📦 Channel ", url="https://t.me/WebXBots")]]))
         return
 
-    app.send_message(message.chat.id, '**Hi, I am Mdisk Video Downloader, you can watch Videos without MX Player.\n__Send me a link to Start...__**',reply_to_message_id=message.id,
-    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("📦 Channel ", url="https://t.me/WebXBots")]]))
+    app.send_message(message.chat.id, '**Hi, I am Mdisk Video Downloader \nPowered by @rb1bots \n Developed By @know_sarthak16 \n You can watch Videos without MX Player.\n__Send me a link to Start...__**',reply_to_message_id=message.id,
+    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("Bots Channel ", url="https://t.me/rb1Bots")]]))
 
 # help command
 @app.on_message(filters.command(["help"]))
@@ -237,7 +237,7 @@ def mdiskdown(client: pyrogram.client.Client, message: pyrogram.types.messages_a
 def thumb(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned** so **Contact Support @helpsarthak_bot**__',reply_to_message_id=message.id)
         return
 
     try:
@@ -289,7 +289,7 @@ def removethumb(client: pyrogram.client.Client, message: pyrogram.types.messages
 def ptumb(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned** so **Contact Support @helpsarthak_bot**__',reply_to_message_id=message.id)
         return
     
     file = app.download_media(message)
@@ -302,7 +302,7 @@ def ptumb(client: pyrogram.client.Client, message: pyrogram.types.messages_and_m
 def change(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned** so **Contact Support @helpsarthak_bot**__',reply_to_message_id=message.id)
         return
     
     info = extras.getdata(str(message.from_user.id))
@@ -328,7 +328,7 @@ def mdisktext(client: pyrogram.client.Client, message: pyrogram.types.messages_a
     if isPremmium and message.chat.id == temp_channel: return
 
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned** so **Contact Support @helpsarthak_bot**__',reply_to_message_id=message.id)
         return
 
     if message.text[0] == "/":
